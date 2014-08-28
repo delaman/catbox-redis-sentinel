@@ -1,24 +1,22 @@
 {
-  "name": "catbox-redis",
-  "description": "Redis adapter for catbox",
-  "version": "1.0.4",
-  "author": "Eran Hammer <eran@hammer.io> (http://hueniverse.com)",
-  "contributors": [
-    "Wyatt Preul <wpreul@gmail.com> (http://jsgeek.com)"
-  ],
-  "repository": "git://github.com/hapijs/catbox-redis",
+  "name": "catbox-redis-sentinel",
+  "description": "Redis sentinel adapter for catbox",
+  "version": "1.0.0",
+  "repository": "git://github.com/delaman/catbox-redis",
   "main": "index",
   "keywords": [
     "cache",
     "catbox",
-    "redis"
+    "redis",
+    "redis-sentinel"
   ],
   "engines": {
     "node": ">=0.10.30"
   },
   "dependencies": {
+    "hoek": "2.x.x",
     "redis": "0.10.x",
-    "hoek": "2.x.x"
+    "redis-sentinel": "^0.1.0"
   },
   "devDependencies": {
     "catbox": "3.x.x",
@@ -26,11 +24,5 @@
   },
   "scripts": {
     "test": "make test-cov"
-  },
-  "licenses": [
-    {
-      "type": "BSD",
-      "url": "http://github.com/hapijs/catbox-redis/raw/master/LICENSE"
-    }
-  ]
+  }
 }
