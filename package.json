@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "hoek": "2.x.x",
-    "redis": "0.10.x",
     "redis-sentinel": "^0.1.0"
   },
   "devDependencies": {
